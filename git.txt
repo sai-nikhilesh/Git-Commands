@@ -1,0 +1,77 @@
+$ git --version
+
+$ git config --global user.name "user-name"
+
+$ git config --global user.email "email-id"
+
+$ git init
+ 
+$ git status
+
+$ git add file.txt
+
+$ git add --all/-A/*
+
+$ git commit -m "First release of files!"
+
+$ git commit index.html -m "First release of files!"
+
+$ git reset --soft HEAD~1 -----to revoke wrong commits
+
+$ git status --short
+
+$ git commit -a -m "Updated file.txt with a new line"  ----to skip staging step and commit directly
+
+$ git commit -help
+
+$ git branch new_branch
+
+$ git branch
+
+$ git checkout new_branch
+
+$ git checkout -b new_branch
+
+$ git merge emergency-fix
+
+$ git branch -d new_branch
+
+$ git remote add origin https://github.com/sai-nikhilesh/python-practice-codes.git
+
+$ git remote set-url origin https://github.com/sai-nikhilesh/python-practice-codes.git
+
+$ git remote remove/rm origin
+
+$ git push --set-upstream origin master
+
+$ git fetch origin
+
+$ git log origin/master
+
+$ git diff origin/master
+
+$ git merge origin/master
+
+$ git pull origin
+
+$ git push origin
+
+$ git branch -a
+
+$ git remote add gh-page https://github.com/sai-nikhilesh/python-practice-codes.github.io.git
+
+$ git clone https://github.com/sai-nikhilesh/python-practice-codes.git
+
+$ git remote -v
+
+$ ssh-keygen
+
+$ clip < filename
+
+$ git log --oneline
+
+$ git revert HEAD --no-edit
+
+$ git reset 8d9jdd7
+
+$ git commit --amend -m "Added new lines!!"
