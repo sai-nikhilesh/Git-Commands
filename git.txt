@@ -76,71 +76,71 @@ $ git reset 8d9jdd7
 
 $ git commit --amend -m "Added new lines!!"  ------>to change commit message
 
-git push <remote> <branch> --force/-f  ------->force push to overwrite the remote branch
+$ git push <remote> <branch> --force/-f  ------->force push to overwrite the remote branch
 
-git mv file.txt newfile.html  ------>to rename the file
+$ git mv file.txt newfile.html  ------>to rename the file
 
-git restore --staged file.txt   ----->unstages the file
+$ git restore --staged file.txt   ----->unstages the file
 
-git restore file.txt
+$ git restore file.txt
 
-git config --list --show-origin
+$ git config --list --show-origin
 
-git config user.name
+$ git config user.name
 
-git config user.email
+$ git config user.email
 
-git config --local/--global --remove-section user
+$ git config --local/--global --remove-section user
 
-git log
+$ git log
 
-git diff   ------>b/w working area and staging area
+$ git diff   ------>b/w working area and staging area
 
-git diff --staged   ------>shows changes b/w staging area and repository area
+$ git diff --staged   ------>shows changes b/w staging area and repository area
 
-git diff head   ------>shows changes b/w working area and repository area
+$ git diff head   ------>shows changes b/w working area and repository area
 
-git cat-file 103801283uh2n4j230180371uehd -p
+$ git cat-file 103801283uh2n4j230180371uehd -p
 
-git switch new-branch  ----->equal to checkout
+$ git switch new-branch  ----->equal to checkout
 
-git remote rename <old-name> <new-name> 
+$ git remote rename <old-name> <new-name> 
 
-git remote remove <name>
+$ git remote remove <name>
 
-git switch -c new_branch
+$ git switch -c new_branch
 
-git branch -M main   ------->to rename current branch
+$ git branch -M main   ------->to rename current branch
 
-git branch -r   ------->shows remote branches
+$ git branch -r   ------->shows remote branches
 
-git switch -   -------->takes back to previous branch
+$ git switch -   -------->takes back to previous branch
 
-git rm -r 'folder name'  -------->(-r) to delete folder
+$ git rm -r 'folder name'  -------->(-r) to delete folder
 
 -----------------------------------------------------
 If you want to delete a file from remote and locally
 -----------------------------------------------------
-git rm 'file name'
+$ git rm 'file name'
 
-git commit -m'message'
+$ git commit -m'message'
 
-git push -u origin branch
+$ git push -u origin branch
 
 -----------------------------------------------
 If you want to delete a file from remote only
 -----------------------------------------------
-git rm --cached 'file name'
+$ git rm --cached 'file name'
 
-git commit -m'message'
+$ git commit -m'message'
 
-git push -u origin branch
+$ git push -u origin branch
 
 ----------------------------------------------
 If you want to push a deleted file to remote
 ----------------------------------------------
-git add 'deleted file name'
+$ git add 'deleted file name'
 
-git commit -m 'message'
+$ git commit -m 'message'
 
-git push -u origin branch
+$ git push -u origin branch
