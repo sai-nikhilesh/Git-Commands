@@ -1,5 +1,9 @@
 $ git --version
 
+$ git config --local user.name "user-name"
+
+$ git config --local user.email "email-id"
+
 $ git config --global user.name "user-name"
 
 $ git config --global user.email "email-id"
@@ -8,9 +12,11 @@ $ git init
  
 $ git status
 
+$ git status --short
+
 $ git add file.txt
 
-$ git add --all/-A/*
+$ git add --all/-A/*/.
 
 $ git commit -m "First release of files!"
 
@@ -18,23 +24,21 @@ $ git commit index.html -m "First release of files!"
 
 $ git reset --soft HEAD~1 -----to revoke wrong commits
 
-$ git status --short
-
-$ git commit -a -m "Updated file.txt with a new line"  ----to skip staging step and commit directly
+$ git commit -a -m "Updated file.txt with a new line"  ------>to skip staging step and commit directly
 
 $ git commit -help
 
 $ git branch new_branch
 
-$ git branch
+$ git branch  ----->shows all local branches
 
-$ git checkout new_branch
+$ git checkout new_branch  ------>to change the branch
 
-$ git checkout -b new_branch
+$ git checkout -b new_branch  ------->it creates and checks out
 
 $ git merge emergency-fix
 
-$ git branch -d new_branch
+$ git branch -d new_branch  ------>to delete the branch
 
 $ git remote add origin https://github.com/sai-nikhilesh/python-practice-codes.git
 
@@ -42,7 +46,7 @@ $ git remote set-url origin https://github.com/sai-nikhilesh/python-practice-cod
 
 $ git remote remove/rm origin
 
-$ git push --set-upstream origin master
+$ git push --set-upstream/-u origin master
 
 $ git fetch origin
 
@@ -52,13 +56,9 @@ $ git diff origin/master
 
 $ git merge origin/master
 
-$ git pull origin
+$ git pull
 
-$ git push origin
-
-$ git branch -a
-
-$ git remote add gh-page https://github.com/sai-nikhilesh/python-practice-codes.github.io.git
+$ git push
 
 $ git clone https://github.com/sai-nikhilesh/python-practice-codes.git
 
@@ -74,4 +74,73 @@ $ git revert HEAD --no-edit
 
 $ git reset 8d9jdd7
 
-$ git commit --amend -m "Added new lines!!"
+$ git commit --amend -m "Added new lines!!"  ------>to change commit message
+
+git push <remote> <branch> --force/-f  ------->force push to overwrite the remote branch
+
+git mv file.txt newfile.html  ------>to rename the file
+
+git restore --staged file.txt   ----->unstages the file
+
+git restore file.txt
+
+git config --list --show-origin
+
+git config user.name
+
+git config user.email
+
+git config --local/--global --remove-section user
+
+git log
+
+git diff   ------>b/w working area and staging area
+
+git diff --staged   ------>shows changes b/w staging area and repository area
+
+git diff head   ------>shows changes b/w working area and repository area
+
+git cat-file 103801283uh2n4j230180371uehd -p
+
+git switch new-branch  ----->equal to checkout
+
+git remote rename <old-name> <new-name> 
+
+git remote remove <name>
+
+git switch -c new_branch
+
+git branch -M main   ------->to rename current branch
+
+git branch -r   ------->shows remote branches
+
+git switch -   -------->takes back to previous branch
+
+git rm -r 'folder name'  -------->(-r) to delete folder
+
+-----------------------------------------------------
+If you want to delete a file from remote and locally
+-----------------------------------------------------
+git rm 'file name'
+
+git commit -m'message'
+
+git push -u origin branch
+
+-----------------------------------------------
+If you want to delete a file from remote only
+-----------------------------------------------
+git rm --cached 'file name'
+
+git commit -m'message'
+
+git push -u origin branch
+
+----------------------------------------------
+If you want to push a deleted file to remote
+----------------------------------------------
+git add 'deleted file name'
+
+git commit -m 'message'
+
+git push -u origin branch
